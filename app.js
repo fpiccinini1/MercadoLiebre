@@ -3,15 +3,22 @@ const path = require('path')
 
 const app = express()
 
-const publicPath = path.resolve(__dirname, './public')
+const publicPath = path.join(__dirname, './public')
+
+const port = process.env.PORT || 3000
+
 app.use(express.static(publicPath))
 
-app.listen(3000, () =>{
+app.listen(port, () =>{
     console.log('sv up, port 3000')
 })
 
 app.get('/',(req, res)=>{
-    res.sendfile(path.resolve(__dirname, './views/home.html'))
+    res.sendfile(path.join(__dirname, './views/home.html'))
 })
 
-//const port = process.env.PORT
+app.get('/register',(req, res)=>{
+    res.sendfile(path.join(__dirname, './register/home.html'))
+})
+ 
+
