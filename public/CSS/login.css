@@ -1,0 +1,151 @@
+main {
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    background-color: var(--grisClaro);
+    color: #525252;
+    margin-bottom: 40px;
+    border-radius: 20px;
+  }
+
+
+main label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #313131;
+}
+
+.register-card-body {
+    margin: 0;
+    padding-top: 10px;
+}
+
+.register-card-body p{
+    margin-top: 20px;
+    text-align: center;
+    display: none;
+}
+
+.row {
+    margin: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group input {
+    margin-top: 5px;
+    height: 30px;
+    border: 1px solid #CED4DA;
+}
+
+.form-group label {
+    margin-top: 10px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border:1px solid #06c;
+}
+
+.row-button {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-button-box {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: space-between;
+}
+
+.row-button-box button {
+    height: 100%;
+    width: 48%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ov-btn-grow-spin {
+    background-color: var(--azul);
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ov-btn-grow-spin:hover {
+    background-color: #0022AA;
+    cursor: pointer;
+  }
+  
+
+
+
+/*BREAKPOINT*/
+
+/* 768px */
+@media (min-width: 768px) {
+
+    .row-data {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .row-data1 {
+        width: 49%;
+    }
+
+    .row-data2 {
+        width: 49%;
+    }
+
+    .row-button-box {
+        display: flex;
+        width: 80%;
+        height: 50%;
+        justify-content: center;
+    }
+
+    .row-button-box button {
+        height: 100%;
+        width: 40%;
+        margin-right: 20px;
+        font-size: 12px;
+        font-weight: normal;
+        letter-spacing: 2px;
+        cursor: pointer;
+    }
+}
+
+/* 1200px */
+@media (min-width: 1200px) {
+    .row-button-box {
+        display: flex;
+        width: 80%;
+        height: 50%;
+        justify-content: center;
+    }
+
+    .row-button-box button {
+        height: 100%;
+        width: 30%;
+        margin-right: 20px;
+        font-size: 14px;
+        font-weight: normal;
+        letter-spacing: 2px;
+        cursor: pointer;
+    }
+}

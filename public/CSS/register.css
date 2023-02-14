@@ -1,0 +1,232 @@
+main {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    background-color: var(--grisClaro);
+    color: #525252;
+    margin-bottom: 40px;
+    
+}
+
+main label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #313131;
+}
+
+.register-card-body {
+    margin: 0;
+    padding-top: 10px;
+}
+
+.register-card-body p{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.row {
+    margin: 20px;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group input {
+    margin-top: 5px;
+    height: 30px;
+    border: 1px solid #CED4DA;
+}
+
+.form-group label {
+    margin-top: 10px;
+}
+
+.buyCell {
+    display: flex;
+    flex-direction: column;
+}
+
+.buyCell-Group {
+    display: flex;
+    margin-top: 5px;
+    height: 30px;
+    align-items: center;
+    width: 95%;
+}
+
+.buyCell-Group .input-cell {
+    margin-left: 10px;
+    margin-top: 0;
+    height: 15px;
+    width: 20px;
+}
+
+.buyCell-Group label {
+    margin: 0;
+    margin-left: 5px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border: 1px solid #06c;
+}
+
+.category-Group div {
+    display: flex;
+    text-align: center;
+    width: 10px;
+}
+
+.groupCategory {
+    display: flex;
+    height: 28.5px;
+}
+
+
+.groupCategory label, input {
+    margin: 0;
+}
+
+.groupCategory input {
+    height: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.label-group {
+    margin-top: 8px;
+}
+
+.category-Group {
+    
+    margin-top: 5px;
+    padding: 5px 0;
+    width: 95%;
+}
+
+.row-button {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-button-box button {
+    height: 100%;
+    width: 48%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ov-btn-grow-spin {
+    background-color: var(--azul);
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ov-btn-grow-spin:hover {
+    background-color: #0022AA;
+    cursor: pointer;
+  }
+
+  .row-button-box button {
+    height: 100%;
+    width: 48%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ov-btn-grow-box {
+    background-color: var(--azul);
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ov-btn-grow-box:hover {
+    background-color: #0022AA;
+    cursor: pointer;
+  }
+/*BREAKPOINT*/
+
+/* 768px */
+@media (min-width: 768px) {
+
+    .row-data {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .row-data1 {
+        width: 49%;
+    }
+
+    .row-data2 {
+        width: 49%;
+    }
+
+    .row-button-box {
+        display: flex;
+        width: 80%;
+        height: 50%;
+        justify-content: center;
+    }
+
+    .row-button-box button {
+        height: 100%;
+        width: 30%;
+        margin-right: 20px;
+        font-size: 14px;
+        font-weight: normal;
+        letter-spacing: 2px;
+        cursor: pointer;
+    }
+
+    .form-group input {
+        width: 100%;
+    }
+
+    .category-Group {
+        width: 100%;
+    }
+
+}
+
+/*1024px*/
+@media (min-width: 1024px) {
+    .row-button-box {
+        display: flex;
+        width: 80%;
+        height: 50%;
+        justify-content: center;
+    }
+
+    .row-button-box button {
+        height: 100%;
+        width: 30%;
+        margin-right: 20px;
+        font-size: 14px;
+        font-weight: normal;
+        letter-spacing: 2px;
+        cursor: pointer;
+    }
+
+}

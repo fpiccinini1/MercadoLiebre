@@ -1,0 +1,116 @@
+/* Tablet */
+@media (min-width: 768px) {
+    .logo-container {
+        flex-direction: row;
+    }
+
+    .logo-bar-container {
+        width: 50%;
+    }
+
+    .card-container {
+        display: flex;
+        width: 50%;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-container h2 {
+        font-size: 16px;
+    }
+
+    .burger-container {
+        display: none;
+    }
+
+    .menu-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    ul {
+        display: flex;
+        width: 45%;
+        justify-content: space-between;
+    }
+
+    /** productos */
+    .last-visit, .offers{
+        height: 860px;
+    }
+
+    .products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .products article{
+        width: 49%;
+    }
+
+    article{
+        height: 26em;
+        transition: all 0.4s ease-in;
+    }
+
+    .main-article h4{
+        position: relative;
+        bottom: 40px;
+        z-index: -1;
+        opacity: 0;
+        transition: all 0.4s ease-in;
+    }
+
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        height: 27em;
+    }
+
+    article:hover .main-article h4{
+        position: relative;
+        bottom: 0;
+        z-index: 1;
+        opacity: 1;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .last-visit, .offers{
+        height: 295px;
+    }
+
+    .products article{
+        width: 24%;
+    }
+
+    .price, .discount {
+        font-size: 14px;
+    }
+
+    article {
+        height: 18em;
+    }
+
+    article:hover {
+        height: 19em;
+    }
+}
+
+/* TV hasta 1366 */
+@media (min-width: 1200px) {
+    .last-visit, .offers{
+        height: 380px;
+    }
+
+    article{
+        height: 22.5em;
+    }
+
+    article:hover{
+        height: 24em;
+    }
+}

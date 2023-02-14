@@ -13,12 +13,17 @@ app.listen(port, () =>{
     console.log('sv up, port 3000')
 })
 
-app.get('/',(req, res)=>{
-    res.sendfile(path.join(__dirname, './views/home.html'))
-})
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '/views/home.html'));
+});
 
-app.get('/register',(req, res)=>{
-    res.sendfile(path.join(__dirname, './register/home.html'))
-})
+app.get('/register', (req, res) => {
+    res.sendFile(path.join(__dirname, '/views/register.html'));
+});
+
+
+app.get('/login', (req, res) => {
+    res.sendFile(path.join(__dirname, '/views/login.html'));
+});
  
 
